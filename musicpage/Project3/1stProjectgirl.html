@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        nav {
+            background: #90953b;
+            height: 80px;
+            width: 100%;
+        }
+        label.logo {
+            color: white;
+            font-size: 30px;
+            line-height: 100px;
+            margin-top: 30px;
+            padding: 100px;
+            font-weight: bold;
+        }
+        nav ul {
+            float: right ;
+            margin-right: 50px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 60px;
+            margin: 5px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+        }
+        /* a.active,a:hover{
+            background: purple;
+            transition: .5S;
+            cursor: pointer;
+        } */
+        ul > li {
+            display: inline-block;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+        ul > li.home a {
+            text-decoration: none;
+            font-size: 17px;
+            border-bottom: 2px solid yellow;
+        }
+        .fullarea {
+            height: 550px;
+            width: 100%;
+            position: relative;
+            background-color: #78853f;
+        }
+        .cutegirl {
+            height: 450px;
+            width: 1050px;
+            margin-left: 80px;
+            margin-top: 55px;
+        }
+        .first {
+            font-size: 29px;
+            color: yellow;
+        }
+        .second {
+            font-size: 56px;
+            color: white;
+        }
+        .third {
+            margin-top: 20px;
+            font-size: 20px;
+            color: white;
+        }
+        .words {
+            width: 500px;
+            height: auto;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-color: transparent;
+            border-style: solid;
+            margin-top: -400px;
+            margin-left: 120px;
+        }
+        .readmore {
+            color: black;
+            background-color: yellow;
+            width: 195px;
+            height: 50px;
+        }
+        .contactus {
+            color: black;
+            background-color: white;
+            margin-left: 15px;
+            width: 195px;
+            height: 50px;
+        }
+        .socialmedia1 {
+            margin-top: 40px;
+            display: flex;
+        }
+        .circle {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 15;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            margin-top: 0px;
+            margin-left: -873px;
+            list-style: none;
+        }
+        ol {
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px
+        }
+        ol.circle li.active {
+            background-color: transparent;
+            border: 3px solid #fefdfc;
+        }
+        ol.circle li {
+            width: 20px;
+            height: 20px;
+            opacity: 1;
+            background-color: yellow;
+            border-radius: 100%;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullarea">
+        <nav>
+
+            <label class="logo" style="color: white;"><img src="/musicpage/Project3/proloo.png" alt="logoz"> BRIGHTON</label>
+            <ul>
+                <li class="home"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                <li><a href="/form/login.html">ABOUT</a></li>
+                <li><a href="/musicvideo/youvideos.html">PROGRAMS</a></li>
+                <li><a href="/artiste/artiste.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <img src="/musicpage/Untitled design.png" alt="" class="cutegirl">
+        <div class="words">
+            <p class="first">A PERFECT LEARNING CENTER</p>
+            <p class="second"><b>FOR YOUR KIDS</b></p>
+            <p class="third">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+            <div class="socialmedia1">
+                <div><button class="readmore">READ MORE</button></div>
+                <div><button class="contactus">CONTACT US</button></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <ol class="circle">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+            </ol>       
+        </div>
+    </div>
+</body>
+</html>

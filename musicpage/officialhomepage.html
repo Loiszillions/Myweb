@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Muzic</title>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .background-clip {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        @media (min-aspect-ratio:16/9) {
+            .background-clip {
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-aspect-ratio:16/9) {
+            .background-clip {
+                width: auto;
+                height: 100%;
+            }
+        }
+        body {
+            font-family: montserrat;
+        }
+        nav {
+            background: #0f1112;
+            height: 80px;
+            width: 100%;
+        }
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 100px;
+            font-weight: bold;
+        }
+        nav ul {
+            float: right ;
+            margin-right: 20;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 8opx;
+            margin: 5px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+        }
+        a.active,a:hover{
+            background: purple;
+            transition: .5S;
+            cursor: pointer;
+        }
+        table {
+            border-collapse: inherit;
+        }
+        table,th,td {
+            border: 1px solid transparent;
+        }
+        th,td {
+            padding: 10px;
+        }
+        th {
+            text-align: justify;
+            background: transparent;
+            color: black;
+        }
+        td {
+            background: transparent;
+            color: black;
+        }
+        ul > li {
+            display: inline-block;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+        ul > li a {
+            text-decoration: none;
+            font-size: 15px;
+        }
+        li>a:link{
+            color: brown;
+            border-bottom: 1px solid;
+        }
+        li>a:visited{
+            color: blue;
+        }
+        li>a:hover{
+            color: coral;
+            font-size: 30px;
+        }
+        li>a:active{
+            color: green;
+            border-bottom: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+
+        <label class="logo" style="color: purple; font-style: oblique;">...BOSS MUZIC...</label>
+        <ul>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+            <li><a href="/musicpage/Loginpage.html">LOGIN</a></li>
+            <li><a href="/musicvideo/youvideos.html">VIDEO</a></li>
+            <li><a href="/artiste/artiste.html">ALL SONGS</a></li>
+            <li><a href="#">DJ MIX</a></li>
+            <li><a href="#">MUSIC NEWS</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="bgvideo">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="/video/Untitled.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br>
+          <table border="2px"; width="500px"; height="10px" style="float: right;">
+            <tr>
+                <th style="font-size: 30px; color: whitesmoke;">HOT</th>
+                <th style="font-size: 30px; color: whitesmoke;">TRENDING</th>
+            </tr>
+            <tr>
+                <td><img src="/images/Ayra-Starr-–-Sability.webp" height="65" width="65" alt=""></td>
+                <td style="font-size: 20px; color: whitesmoke;"><a href="/musicpage/sabilitypage.html">Ayra Starr-Sability</a></td>
+            </tr>
+            <tr>
+                <td><img src="/images/Ruger-–-Asiwaju.webp" height="65" width="65" alt=""></td>
+                <td style="font-size: 20px; color: whitesmoke;">Ruger-Asiwaju</td>
+            </tr>
+            <tr>
+                <td><img src="/images/rtidpic.webp" height="65" width="65" alt=""></td>
+                <td style="font-size: 20px; color: whitesmoke;"><a href="/musicpage/musicpage.html">Kizz Daniel-Rich Till I Die</a></td>
+            </tr>
+            <tr>
+                <td><img src="/images/Boy-Spyce-–-Folake.webp" height="65" width="65" alt=""></td>
+                <td style="font-size: 20px; color: whitesmoke;">Boy Spyce-Folake</td>
+            </tr>
+            <tr>
+                <td><img src="/images/Omah-Lay-–-Boy-Alone-EP.webp" height="65" width="65" alt=""></td>
+                <td style="font-size: 20px; color: whitesmoke;">Omah Lay-Soso</td>
+            </tr>
+            <tr>
+                <td><img src="/images/remacalmdown.webp" height="65" width="65" alt=""></td>
+                <td style="font-size: 20px; color: whitesmoke;">Rema-Calmdown</td>
+            </tr>
+        </table>
+        <img src="/images/Home Of Good Music.png" width="1216px" height="450px" style="background-color: aliceblue;" alt="">
+</body>
+</html>
